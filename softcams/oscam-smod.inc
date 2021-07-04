@@ -30,9 +30,9 @@ PR = "r0"
 S = "${WORKDIR}/git"
 F = "${WORKDIR}/git/files"
 
-RPROVIDES_${PN} += "enigma2-plugin-softcams-oscam-ymod enigma2-plugin-softcams-oscam-atv-ymod enigma2-plugin-softcams-oscam-ymod-openatv"
-RREPLACES_${PN} += "enigma2-plugin-softcams-oscam-ymod enigma2-plugin-softcams-oscam-atv-ymod enigma2-plugin-softcams-oscam-ymod-openatv"
-RCONFLICTS_${PN} += "enigma2-plugin-softcams-oscam-ymod enigma2-plugin-softcams-oscam-atv-ymod enigma2-plugin-softcams-oscam-ymod-openatv"
+RPROVIDES_${PN} += "enigma2-plugin-softcams-oscam-ymod enigma2-plugin-softcams-oscam-openvix-ymod enigma2-plugin-softcams-oscam-ymod-openvix"
+RREPLACES_${PN} += "enigma2-plugin-softcams-oscam-ymod enigma2-plugin-softcams-oscam-openvix-ymod enigma2-plugin-softcams-oscam-ymod-openvix"
+RCONFLICTS_${PN} += "enigma2-plugin-softcams-oscam-ymod enigma2-plugin-softcams-oscam-openvix-ymod enigma2-plugin-softcams-oscam-ymod-openvix"
 
 
 python do_get_smodsvn () {

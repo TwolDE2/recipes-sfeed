@@ -23,6 +23,6 @@ PKGV = "1.20+git${GITPKGV}"
 
 S = "${WORKDIR}/git"
 
-RPROVIDES_${PN} += "enigma2-plugin-softcams-oscam-atv-emu"
-RREPLACES_${PN} += "enigma2-plugin-softcams-oscam-atv-emu"
-RCONFLICTS_${PN} += "enigma2-plugin-softcams-oscam-atv-emu"
+RPROVIDES_${PN} += "enigma2-plugin-softcams-oscam-openvix-emu"
+RREPLACES_${PN} += "enigma2-plugin-softcams-oscam-openvix-emu"
+RCONFLICTS_${PN} += "enigma2-plugin-softcams-oscam-openvix-emu"

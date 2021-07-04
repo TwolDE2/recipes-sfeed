@@ -19,11 +19,11 @@ else
 fi
 
 [ -n "$CAM" ] || exit 1
-[ -x /usr/bin/$CAM ] || exit 1
+[ -x /usr/softcams/$CAM ] || exit 1
 
 PIDFILE=/var/tmp/${CAM}.pid
 DESC="Softcam service $CAM"
-DAEMON=/usr/bin/$CAM
+DAEMON=/usr/softcams/$CAM
 
 case "$1" in
 start)

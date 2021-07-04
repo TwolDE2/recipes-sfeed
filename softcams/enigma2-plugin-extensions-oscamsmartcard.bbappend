@@ -1,1 +1,1 @@
-SRC_URI="git://github.com/oe-special/oscamsmartcard.git"
+SRC_URI="git://github.com/TwolDe2/oscamsmartcard.git"

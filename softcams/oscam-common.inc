@@ -31,6 +31,7 @@ EXTRA_OECMAKE += "\
 	-DWITH_STAPI=0 \
 	-DHAVE_LIBUSB=1 \
 	-DSTATIC_LIBUSB=0 \
+    	-DMODULE_CONSTCW=1 \	
 "
 
 do_configure_prepend () {
@@ -40,7 +41,7 @@ do_configure_prepend () {
 
 do_install () {
 	install -d ${D}/${bindir}
-	install -m 0755 ${WORKDIR}/build/oscam ${D}/usr/bin/${CAMNAME}
+	install -m 0755 ${WORKDIR}/build/oscam ${D}/usr/softcams/${CAMNAME}
 	install -d ${D}/${sysconfdir}/tuxbox/config/${CAMNAME}
 	[[ -e ${S}/../${CAMNAME} ]] && install 644 ${S}/../${CAMNAME}/* ${D}/${sysconfdir}/tuxbox/config/${CAMNAME} 2>/dev/null || true
 	[[ -e ${D}/${sysconfdir}/tuxbox/config/${CAMNAME}/Sample.configs ]] && rm ${D}/${sysconfdir}/tuxbox/config/${CAMNAME}/Sample.configs 2>/dev/null || true

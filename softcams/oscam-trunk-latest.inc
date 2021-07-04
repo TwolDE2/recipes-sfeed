@@ -6,8 +6,8 @@ DESCRIPTION_${PN} = "OSCam Open Source Softcam\n \
 
 #PR = "r0"
 
-RPROVIDES_${PN} += "enigma2-plugin-softcams-oscam-atv"
-RREPLACES_${PN} += "enigma2-plugin-softcams-oscam-atv"
-RCONFLICTS_${PN} += "enigma2-plugin-softcams-oscam-atv"
+RPROVIDES_${PN} += "enigma2-plugin-softcams-oscam-openvix"
+RREPLACES_${PN} += "enigma2-plugin-softcams-oscam-openvix"
+RCONFLICTS_${PN} += "enigma2-plugin-softcams-oscam-openvix"
 
 SRC_URI += "svn://svn.streamboard.tv/oscam;protocol=https;module=trunk;scmdata=keep"
